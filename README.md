@@ -3,7 +3,7 @@ This project connects Unity, SUMO, VR headset, e-scooter and car driving simulat
 
 <img src="https://imgur.com/pv2Bh7m.png" alt="players and screen" width="600"/>
 <img src="https://imgur.com/2WMM2XH.png" alt="desktop screen" width="600"/>
-<img src="https://imgur.com/pAgo6Ps.png" alt="VR POV" width="600"/>
+<img src="https://imgur.com/G4JwhQw.png" alt="VR POV"/>
 
 The project extends https://github.com/DarraghMac97/Real-time-Traffic-Simulation-with-3D-Visualisation/tree/master by integreting an e-scooter riding simulator, pedestrian simulation and support for VR headsets.
  
