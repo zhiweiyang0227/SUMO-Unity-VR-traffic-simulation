@@ -5,7 +5,7 @@ This project connects Unity, SUMO, VR headset, e-scooter and car driving simulat
 <img src="https://imgur.com/2WMM2XH.png" alt="desktop screen" width="600"/>
 <img src="https://imgur.com/pAgo6Ps.png" alt="VR POV" width="600"/>
 
-The project extends https://github.com/DarraghMac97/Real-time-Traffic-Simulation-with-3D-Visualisation/tree/master, by integreting e-scooter riding simulator, pedestrian simulation and VR headset.
+The project extends https://github.com/DarraghMac97/Real-time-Traffic-Simulation-with-3D-Visualisation/tree/master by integreting an e-scooter riding simulator, pedestrian simulation and support for VR headsets.
  
  ## How It Works
 The simulation environment is based off an OSM file of an area of northeastern Manhattan, selected using [OpenStreetMap.org.](https://www.openstreetmap.org)
@@ -19,9 +19,9 @@ is used in this project to achieve these actions.
 
 The player vehicle can be controlled either by standard keyboard controls or by a Logitech driving wheel. The Logitech Driving Force GT wheel was used in the creation of this project.
 
-The player e-scooter can be controlled by a real e-scooter connected to an external device (Arduino) for sensing control data.
+The player e-scooter is operated via a real e-scooter connected to an Arduino-based external device that captures control data.
 
-VR headset is used to demonstrate the point of view of the player e-scooter.
+A VR headset is employed to provide a first-person perspective from the e-scooter rider's point of view, enhancing immersion and realism.
 
 ## Installation 
 This project was built Using Unity 2018.2.17 and SUMO 1.22.0. Later releases of each software may cause the project to function incorrectly.
