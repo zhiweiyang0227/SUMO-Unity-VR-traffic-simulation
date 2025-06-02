@@ -27,7 +27,7 @@ A VR headset (VIVE Focus 3) is employed to provide a first-person perspective fr
 This project was built Using Unity 2018.2.17 and SUMO 1.22.0. Later releases of each software may cause the project to function incorrectly.
 
 Before using this project, download the following:
-- [SUMO 1.22.0]
+- SUMO 1.22.0
 - [Unity 2018.2.17](https://unity3d.com/get-unity/download/archive)
 
 Once both have been installed, open the scene in Unity.
