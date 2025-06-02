@@ -2,8 +2,8 @@
 This project connects Unity, SUMO, VR headset, e-scooter and car driving simulator to create a real-time, interactive 3D traffic simulation platform. It combines the traffic modeling strengths of SUMO with Unity’s immersive visualization and control capabilities.
 
 <img src="https://imgur.com/pv2Bh7m.png" alt="players and screen" width="600"/>
-<img src="https://imgur.com/2WMM2XH.png" alt="desktop screen" width="600"/>
-<img src="https://imgur.com/G4JwhQw.png" alt="VR POV"/>
+<img src="https://imgur.com/2WMM2XH.png" alt="desktop screen"/>
+<img src="https://imgur.com/G4JwhQw.png" alt="VR POV" width="800"/>
 
 The project extends https://github.com/DarraghMac97/Real-time-Traffic-Simulation-with-3D-Visualisation/tree/master by integreting an e-scooter riding simulator, pedestrian simulation and support for VR headsets.
  
