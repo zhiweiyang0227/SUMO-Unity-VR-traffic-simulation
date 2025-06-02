@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63815bb5d21bc5b49842b620842be5de, type: 3}
+  m_Name: __actions_mixedreality
+  m_EditorClassIdentifier: 
+  allActions:
+  - {fileID: 11400000, guid: 642d175967d990c42b5e065acdd6943b, type: 2}
+  nonVisualInActions: []
+  visualActions:
+  - {fileID: 11400000, guid: 642d175967d990c42b5e065acdd6943b, type: 2}
+  poseActions:
+  - {fileID: 11400000, guid: 642d175967d990c42b5e065acdd6943b, type: 2}
+  skeletonActions: []
+  outActionArray: []
+  fullPath: /actions/mixedreality
+  usage: single
+  inActions: {fileID: 11400000, guid: 4819a8d706f3afc4695d6e47a8ff7d9e, type: 2}

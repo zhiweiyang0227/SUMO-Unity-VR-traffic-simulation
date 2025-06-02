@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.sumounity.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "H:\\sumo_unity\\Real-time-Traffic-Simulation-with-3D-Visualisation_zhiwei\\Sumo Unity\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Sumo Unity [Testing]"
+        }
+      }
+    }
+  ]
+}

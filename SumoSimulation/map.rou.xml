@@ -32,5 +32,13 @@
     <vehicle id="4" depart="4.00">
         <route edges="-196116967#1 -165473832#2 -577976192#4 243056524#1"/>
     </vehicle>
-    
+
+    <!-- Define a vehicle type for the e-scooter -->
+    <vType id="escooterType" accel="4.0" decel="6.0" sigma="0.5" length="1.0" minGap="0.5" maxSpeed="8.4" guiShape="motorcycle"/>
+
+    <!-- Add the e-scooter -->
+    <vehicle id="escooter" type="escooterType" depart="0.00">
+        <route edges="-196116967#1 -165473832#2 -577976192#4 243056524#1"/>
+    </vehicle>
+
 </routes>

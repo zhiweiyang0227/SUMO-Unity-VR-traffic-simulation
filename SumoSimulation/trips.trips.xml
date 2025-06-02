@@ -3,15 +3,105 @@
   options: -n map.net.xml -r mapp.rou.xml -e 10
 -->
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
-    <trip id="0" depart="0.00" from="-165473832#3" to="-577976192#2"/>
-    
-    <trip id="veh_3" depart="1.00" from="165473832#0" to="5671685#2"/>
+    <vType id="car" vClass="passenger" accel="4" decel="9" length="4.5" maxSpeed="33.33" sigma="0.5" guiShape="passenger">
+        <param key="device.emissions.probability" value="1.0"/>
+        <param key="device.emissions.fuelConsumption" value="true"/>
+        <param key="lcStrategic" value="-1"/>
+        <param key="lcCooperative" value="-1"/>
+        <param key="lcSpeedGain" value="0"/>
+        <param key="lcKeepRight" value="0"/>
+    </vType>
+    <trip id="veh" type="car" depart="0.00" from= "455687907#0" to="196116967#10" departLane="free" departPos="free" color="0,0,1"/>
+    <!-- "-165473832#3" to="-577976192#2" -->
+    <!-- Added e-scooter trip -->
+    <vType id="es" vClass="evehicle" accel="4.0" decel="6.0" sigma="0.5" length="1.0" maxSpeed="30.0" guiShape="evehicle" mass="70" color="1,0,0">
+        <param key="has.battery.device" value="true"/>
+        <param key="wheelRadius" value="0.17"/> <!-- 17 cm -->
+        <param key="rotatingMass" value="0.1"/>
+        <param key="rollDragCoefficient" value="0.015"/>
+        <param key="airDragCoefficient" value="0.9"/>
+        <param key="frontSurfaceArea" value="0.25"/> <!-- m² -->
+        <param key="gearRatio" value="4.0"/>
+        <param key="gearEfficiency" value="0.95"/>
+        <param key="maximumTorque" value="30"/> <!-- Nm -->
+        <param key="maximumPower" value="5000"/> <!-- Watts (5 kW peak) -->
+        <param key="maximumRecuperationTorque" value="15"/> <!-- Nm -->
+        <param key="maximumRecuperationPower" value="1500"/> <!-- Watts -->
+        <param key="internalBatteryResistance" value="0.1"/>
+        <param key="nominalBatteryVoltage" value="48"/> <!-- V -->
+        <param key="constantPowerIntake" value="50"/> <!-- Watts, base electronics -->       
+        <param key="lcStrategic" value="-1"/>
+        <param key="lcCooperative" value="-1"/>
+        <param key="lcSpeedGain" value="0"/>
+        <param key="lcKeepRight" value="0"/>
+    </vType>
+
+    <trip id="escooter" depart="0.00" from= "455687907#0" to="196116967#10" type="es" departLane="free" departPos="free"/>    
+    <!-- "455687907#0" to="196116967#10" -->
+
+    <!-- <vType id="ped" vClass="ignoring" accel="1.5" decel="2.0" sigma="0.3" length="0.3" width="0.5" maxSpeed="1.6" guiShape="pedestrian"/>
+    <trip id="Ch_0CP00F00" depart="0.00" from= "455687907#0" to="196116967#10" type="ped" departLane="free" departPos="free"/>    
+    <trip id="DemoPlayer00" depart="0.00" from= "455687907#0" to="196116967#10" type="ped" departLane="free" departPos="free"/>    
+    <trip id="Ch_0CP00F00B" depart="0.00" from= "455687907#0" to="196116967#10" type="ped" departLane="free" departPos="free"/>    
+    <trip id="Ch_0CP00F00Bn" depart="0.00" from= "455687907#0" to="196116967#10" type="ped" departLane="free" departPos="free"/>     -->
+
+    <vType id="ped" vClass="pedestrian" accel="1.5" decel="2.0" sigma="0.3"
+       length="0.3" width="0.5" maxSpeed="1.6" guiShape="pedestrian" color="0,1,1"/>
+
+    <person id="Ch_0CP00F00" depart="0.00" type="ped">
+        <walk from="455687907#0" to="196116967#10"/>
+    </person>
+
+    <person id="DemoPlayer00" depart="0.00" type="ped">
+        <walk from="455687907#0" to="196116967#10"/>
+    </person>
+
+    <person id="Ch_0CP00F00B" depart="0.00" type="ped">
+        <walk from="455687907#0" to="196116967#10"/>
+    </person>
+
+    <person id="Ch_0CP00F00Bn" depart="0.00" type="ped">
+        <walk from="455687907#0" to="196116967#10"/>
+    </person>
+
+    <vType id="es-npc" vClass="evehicle" accel="2.0" decel="6.0" sigma="0.5" length="1.0" maxSpeed="8.4" guiShape="evehicle" mass="70" color="1,1,0">
+        <param key="has.battery.device" value="true"/>
+        <param key="wheelRadius" value="0.17"/> <!-- 17 cm -->
+        <param key="rotatingMass" value="0.1"/>
+        <param key="rollDragCoefficient" value="0.015"/>
+        <param key="airDragCoefficient" value="0.9"/>
+        <param key="frontSurfaceArea" value="0.25"/> <!-- m² -->
+        <param key="gearRatio" value="4.0"/>
+        <param key="gearEfficiency" value="0.95"/>
+        <param key="maximumTorque" value="30"/> <!-- Nm -->
+        <param key="maximumPower" value="5000"/> <!-- Watts (5 kW peak) -->
+        <param key="maximumRecuperationTorque" value="15"/> <!-- Nm -->
+        <param key="maximumRecuperationPower" value="1500"/> <!-- Watts -->
+        <param key="internalBatteryResistance" value="0.1"/>
+        <param key="nominalBatteryVoltage" value="48"/> <!-- V -->
+        <param key="constantPowerIntake" value="50"/> <!-- Watts, base electronics -->  
+        <param key="lcStrategic" value="-1"/>
+        <param key="lcCooperative" value="-1"/>
+        <param key="lcSpeedGain" value="0"/>
+        <param key="lcKeepRight" value="0"/>         
+    </vType>
+    <trip id="escooter_1" depart="1.00" from= "455687907#0" to="196116967#10" departLane="free" departPos="free" type="es-npc"/>
+    <trip id="escooter_2" depart="2.00" from= "455687907#0" to="196116967#10" departLane="free" departPos="free" type="es-npc"/>
+    <trip id="veh_1" type="car" depart="3.00" from= "455687907#0" to="196116967#10" departLane="free" departPos="free" color="0,0,1"/>
+    <trip id="escooter_3" depart="3.00" from= "455687907#0" to="196116967#10" departLane="free" departPos="free" type="es-npc"/>
+    <trip id="veh_2" type="car" depart="5.00" from= "455687907#0" to="196116967#10" departLane="free" departPos="free" color="0,0,1"/>
+    <!-- <trip id="escooter_4" depart="4.00" from= "455687907#0" to="196116967#10" type="es-npc"/>
+    <trip id="escooter_5" depart="5.00" from= "455687907#0" to="196116967#10" type="es-npc"/> -->    
+    <!-- "455687907#0" to="196116967#10" -->
+
+    <!-- <trip id="veh_3" depart="1.00" from="165473832#0" to="5671685#2"/>
     <trip id="veh_4" depart="1.00" from="455687907#3" to="5670656"/>
     <trip id="veh_5" depart="1.00" from="-196116967#10" to="165473832#3"/>
     <trip id="veh_6" depart="1.00" from="-196116967#7" to="-165473832#0"/>
     <trip id="veh_7" depart="1.00" from="5671119#2" to="-165473832#0"/>
     <trip id="veh_8" depart="1.00" from="455687907#3" to="5672585#2"/>
-    <trip id="veh_9" depart="1.00" from="5672585#0" to="5671137#2"/>
-    <trip id="veh_1" depart="4.00" from="-165473832#3" to="243056525#0"/>
-    <trip id="veh_2" depart="6.00" from="-165473832#3" to="-455687907#2"/>
+    <trip id="veh_9" depart="1.00" from="5672585#0" to="5671137#2"/> -->
+    
+
+
 </routes>
