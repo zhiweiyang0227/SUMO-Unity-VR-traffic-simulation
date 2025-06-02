@@ -4,7 +4,7 @@ This project connects Unity, SUMO, VR headset, e-scooter and car driving simulat
 ![2D Junction](https://i.imgur.com/kf3iFp4.png)
 ![3D Junction](https://i.imgur.com/Quj2AWV.png)
 
-The project extends https://github.com/DarraghMac97/Real-time-Traffic-Simulation-with-3D-Visualisation/tree/master, by integreting e-scooter riding simulator, pedestrian simulation as well as VR headset.
+The project extends https://github.com/DarraghMac97/Real-time-Traffic-Simulation-with-3D-Visualisation/tree/master, by integreting e-scooter riding simulator, pedestrian simulation and VR headset.
  
  ## How It Works
 The simulation environment is based off an OSM file of an area of northeastern Manhattan, selected using [OpenStreetMap.org.](https://www.openstreetmap.org)
