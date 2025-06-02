@@ -53,5 +53,7 @@ I hope you find this project useful. If you have any questions or issues using i
 ## Works not created by me used in this project
 - [Low Poly Street Pack](https://assetstore.unity.com/packages/3d/environments/urban/low-poly-street-pack-67475) by Dynamic Art. Prefabs Lampost_C, Lampost_D and Material Grass used.
 - [Vehicle Tools](https://assetstore.unity.com/packages/essentials/tutorial-projects/vehicle-tools-83660) by Unity Technologies. Family Car prefab, Easy Suspension Script and Drift Camera script used. WheelDrive script used but modified to allow for Logitech Driving Force GT input
+- [E-scooter 3D model](https://sketchfab.com/3d-models/xiaomi-electric-scooter-4-e53ebaf78add4735887023db3a105d1c) by Sketchfab.
+- [Pedestrian models](https://assetstore.unity.com/packages/3d/characters/humanoids/humans/cube-people-demo-193803) by Unity AssetStore. Cube People Traffic Script used.
 - [Logitech GamingSDK](https://assetstore.unity.com/packages/tools/integration/logitech-gaming-sdk-6630) By Logitech Gaming
 - [C# port of TraCI](https://github.com/CodingConnected/CodingConnected.Traci) by @CodingConnected 
