@@ -21,7 +21,7 @@ The player vehicle can be controlled either by standard keyboard controls or by 
 
 The player e-scooter is operated via a real e-scooter connected to an Arduino-based external device that captures control data.
 
-A VR headset is employed to provide a first-person perspective from the e-scooter rider's point of view, enhancing immersion and realism.
+A VR headset (VIVE Focus 3) is employed to provide a first-person perspective from the e-scooter rider's point of view, enhancing immersion and realism.
 
 ## Installation 
 This project was built Using Unity 2018.2.17 and SUMO 1.22.0. Later releases of each software may cause the project to function incorrectly.
